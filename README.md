@@ -11,6 +11,8 @@ Calculate "letter-days" metric for your Gmail inbox and store it to Google Sprea
 
 ## Add visualisation
 ![Graph](http://dl4.joxi.net/drive/2020/05/26/0006/2999/400311/11/8631b1226c.jpg)
+1. Add some usefull stats via 'Insert > Functions': average, mean.
+1. Add graph: regular diagram and spark. Spark can be added using function (=SPARKLINE(RANGE))in any cell.
 
 ## Known issues
 1. Average for first week will be incorrect, because your first run may be in the middle of the week.
