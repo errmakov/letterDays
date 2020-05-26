@@ -20,17 +20,20 @@ function LetterDays() {
   Get range of last 6 rows
   */
   var lastRow = sheet.getLastRow();
+
   var letterdaysWeek = letterdays;
   var dayOfWeek = 0;
 
-  Logger.log('Last Row '+ lastRow);
-  var range = sheet.getRange(lastRow-5, 2, 6,1);
-  var values = range.getValues();
-
-  for (var row in values) {
-    for (var col in values[row]) {
-      letterdaysWeek+=values[row][col];
-      Logger.log(values[row][col]);
+  //Logger.log('LastRow: ', lastRow);
+  if (lastRow>=6) {
+    var range = sheet.getRange(lastRow-5, 2, 6,1);
+    var values = range.getValues();
+    
+    for (var row in values) {
+      for (var col in values[row]) {
+        letterdaysWeek+=values[row][col];
+        Logger.log(values[row][col]);
+      }
     }
   }
   letterdaysWeek = letterdaysWeek / 7;
