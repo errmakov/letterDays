@@ -9,5 +9,8 @@ Calculate "letter-days" metric for your Gmail inbox and store it to Google Sprea
 1. Set spreadsheet_id in the code (line 3). [Where I can get spreadsheet id](https://www.google.com/search?q=how+to+get+google+spread+sheet+id)?
 1. Make the first run. Google ask you about permission to your Gmail. Give access required (read). This app will be not trusted by Google, so don't panic and follow next.
 
+## Add visualisation
+![Graph](http://dl4.joxi.net/drive/2020/05/26/0006/2999/400311/11/8631b1226c.jpg)
+
 ## Known issues
 1. Average for first week will be incorrect, because your first run may be in the middle of the week.
